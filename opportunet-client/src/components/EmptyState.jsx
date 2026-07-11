@@ -1,8 +1,8 @@
 function EmptyState() {
   return (
-    <div className="text-center py-16">
-      <p className="text-gray-500 text-lg mb-2">No opportunities found</p>
-      <p className="text-gray-400 text-sm">Try changing your filters or check back later.</p>
+    <div className="text-center py-20 border border-dashed border-line rounded-sm">
+      <p className="font-display text-lg text-ink mb-1">No opportunities posted yet</p>
+      <p className="font-mono text-xs text-slate uppercase tracking-wide">Check back soon, or adjust your filters</p>
     </div>
   );
 }

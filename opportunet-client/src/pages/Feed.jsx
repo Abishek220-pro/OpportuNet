@@ -37,9 +37,9 @@ function Feed() {
   });
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-paper">
       <Navbar />
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-5xl mx-auto px-6 py-8">
         <FilterBar
           selectedType={selectedType}
           onTypeChange={setSelectedType}
@@ -48,7 +48,7 @@ function Feed() {
         />
 
         {loading ? (
-          <p className="text-center text-gray-500 py-16">Loading opportunities...</p>
+          <p className="font-mono text-xs text-slate text-center py-20 uppercase tracking-wide">Loading opportunities</p>
         ) : filtered.length === 0 ? (
           <EmptyState />
         ) : (
