@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/opportunities';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/opportunities';
 
 export const getOpportunities = async (filters = {}) => {
   const response = await axios.get(API_URL, { params: filters });
